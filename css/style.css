@@ -86,7 +86,7 @@ main{
 }
 
 .barrapes{
-    border: 1px solid rgb(122, 122, 122);
+    border: 1px solid rgb(60, 60, 60);
     border-radius: 50px;
     height: 50px;
     width: 585px;
@@ -98,8 +98,12 @@ main{
     margin: auto;
 }
 
+.barrapes:hover{
+    background: rgb(57, 57, 57);
+}
+
 .search{
-    background: #1d2022;
+    background: none;
     color: white;
     border: 0;
     font-size: 12pt;
