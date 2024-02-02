@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial, sans-serif;
-    font-size: 10pt;
+    font-size: 11pt;
 }
 .container{
     position: relative;
@@ -98,6 +98,17 @@ main{
     margin: auto;
 }
 
+.search{
+    background: #1d2022;
+    color: white;
+    border: 0;
+    font-size: 12pt;
+    width: 73%;
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .icons{
     width: 110px;
     display: flex;
@@ -122,6 +133,10 @@ main{
     align-items: center;
     justify-content: center;
     color: white
+}
+.item a{
+    text-decoration: none;
+    color: white;
 }
 footer{
     color: white;
@@ -154,9 +169,15 @@ footer .f2 .m1 ul{
     justify-content: space-between;
     align-items: center;
     width: 400px;
+
 } 
 footer .f2 .m1 ul li{
     list-style: none;
+}
+
+footer .f2 .m1 ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 footer .f2 .m2 ul{
@@ -165,10 +186,31 @@ footer .f2 .m2 ul{
     justify-content: space-between;
     width: 250px;
 }
-@media screen and (max-width: 768px){
+
+footer .f2 .m2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
     footer .f2{
         display: flex;
         justify-content: space-around;
+    }
+}
+@media screen and (max-width:750px){
+    footer {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .f1{
+        height: 19%;
+    }
+    footer .f2{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
     }
 }
 @media  screen and (max-width: 630px){
