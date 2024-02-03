@@ -101,6 +101,7 @@ main{
 
 .barrapes:hover{
     background: rgb(57, 57, 57);
+    transition: 0.5s;
 }
 
 .search{
