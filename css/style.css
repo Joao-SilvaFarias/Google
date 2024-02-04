@@ -5,25 +5,7 @@
 }
 
 :root{
-    --container-bg: #1d2022;
-    --header-text: white;
-    --barrapes-bg-hover: rgb(57, 57, 57); 
-    --item-bg: rgb(57, 57, 57);
-    --item-text: white;
-    --footer-bg: rgb(24, 24, 24);
-    --footer-text1: white;
-    --footer-text2: white;
-    --footer-text3: white;
-    --footer-hr: rgb(70, 70, 70);
-    --claro-bg: none;
-    --switch-text: white;
-    --barrapes-text: white;
-    --barrapes-boder: rgb(57, 57, 57);
-    --shadow: black;
 
-}
-
-.light-mode:root{
     --container-bg: white;
     --header-text: black;
     --barrapes-bg-hover: #ebebeb; 
@@ -39,6 +21,24 @@
     --barrapes-text: black;
     --barrapes-boder: #ebebeb;
     --shadow: rgb(70, 70, 70);
+}
+
+.dark-mode:root{
+    --container-bg: #1d2022;
+    --header-text: white;
+    --barrapes-bg-hover: rgb(57, 57, 57); 
+    --item-bg: rgb(57, 57, 57);
+    --item-text: white;
+    --footer-bg: rgb(24, 24, 24);
+    --footer-text1: white;
+    --footer-text2: white;
+    --footer-text3: white;
+    --footer-hr: rgb(70, 70, 70);
+    --claro-bg: none;
+    --switch-text: white;
+    --barrapes-text: white;
+    --barrapes-boder: rgb(57, 57, 57);
+    --shadow: black;
 }
 body{
     font-family: Arial, sans-serif;

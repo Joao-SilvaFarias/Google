@@ -4,7 +4,7 @@ const clicarpes = document.querySelector('.barrapes');
 const passar = document.querySelector('.barrapes:hover');
 
 $checkbox.addEventListener('change', function(){
-    $html.classList.toggle('light-mode');
+    $html.classList.toggle('dark-mode');
 })
  
 document.addEventListener('mousedown', (Event) => {
