@@ -215,8 +215,8 @@ main{
     position: relative;
     position: absolute;
     cursor: pointer;
-    bottom: 100px;
-    right: 5px;
+    bottom: 13%;
+    right: 0.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
