@@ -18,6 +18,9 @@
     --claro-bg: none;
     --switch-text: white;
     --barrapes-text: white;
+    --barrapes-boder: rgb(57, 57, 57);
+    --shadow: black;
+
 }
 
 .light-mode:root{
@@ -34,6 +37,8 @@
     --claro-bg: #ebebeb;
     --switch-text: black;
     --barrapes-text: black;
+    --barrapes-boder: #ebebeb;
+    --shadow: rgb(70, 70, 70);
 }
 body{
     font-family: Arial, sans-serif;
@@ -82,6 +87,30 @@ header{
     color: var(--header-text);
 }
 
+.menu ul .mballs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 21px;
+    width: 21px;
+    margin-top: 7px;
+}
+
+.menu ul .mballs .r{
+    width: 21px;
+    height: 4px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu ul .mballs .r .ball{
+    height: 4px;
+    width: 4px;
+    border-radius: 100px;
+    background-color: var(--header-text);
+}
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -117,8 +146,9 @@ main{
 }
 
 .barrapes{
-    border: 1px solid rgb(57, 57, 57);
+    border: 1px solid var(--barrapes-boder);
     border-radius: 50px;
+    box-shadow: none;
     height: 50px;
     width: 585px;
     display: flex;
@@ -132,6 +162,7 @@ main{
 
 .barrapes:hover{
     background: var(--barrapes-bg-hover);
+    box-shadow: 5px 5px 5px var(--shadow);
     transition: 0.5s;
 }
 
@@ -169,6 +200,11 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.item:hover{
+    box-shadow: 5px 5px 5px var(--shadow);
+    transition: 0.5s;
 }
 .item a{
     text-decoration: none;

@@ -1,6 +1,6 @@
 const $html = document.querySelector('html');
 const $checkbox = document.querySelector('#switch');
-const clicar = document.querySelector('.barrapes');
+const clicarpes = document.querySelector('.barrapes');
 const passar = document.querySelector('.barrapes:hover');
 
 $checkbox.addEventListener('change', function(){
@@ -8,11 +8,12 @@ $checkbox.addEventListener('change', function(){
 })
  
 document.addEventListener('mousedown', (Event) => {
-    if(clicar.contains(Event.target))  {
-        clicar.style.background = 'var(--barrapes-bg-hover)';
+    if(clicarpes.contains(Event.target))  {
+        clicarpes.style.background = 'var(--barrapes-bg-hover)';
+        clicarpes.style.boxShadow = '5px 5px 5px var(--shadow)';
     }else{
-        clicar.style.background = 'none';
-        clicar.style = '.barrapes:hover';
+        clicarpes.style.background = 'none';
+        clicarpes.style = '.barrapes:hover';
     }
 })
 
